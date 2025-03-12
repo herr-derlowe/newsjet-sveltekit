@@ -1,29 +1,19 @@
-<script>
-  let name = $state("World");
-  const NAMES = ["World", "James", "Igor", "Philemon", "Cornelius"];
-  function changeName() {
-    name = NAMES[Math.floor(Math.random() * NAMES.length)];
-  }
-</script>
-
 <svelte:head>
-  <title>Home</title>
+	<title>Franken UI</title>
 </svelte:head>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Hello {name}, this is your first SvelteKit app!</p>
-<button onclick={changeName} class="button is-primary my-3">Change name</button>
-<br />
-<p>
-  Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the
-  documentation
-</p>
-
-<section class="section">
-  <div class="container has-text-centered">
-    <h1 class="title">Hello World</h1>
-    <p class="subtitle">
-      My first website with <strong>Bulma</strong>!
-    </p>
-  </div>
-</section>
+<div class="bg-background font-geist-sans text-foreground antialiased">
+	<!-- START CODING HERE -->
+	<div class="uk-container mt-40">
+		<div class="space-y-4">
+			<h1 class="uk-hero-sm text-center font-bold">Franken UI: Dos</h1>
+			<div class="flex justify-center gap-x-2">
+				<a class="uk-btn uk-btn-primary" href="https://franken-ui.dev/docs/introduction"> Learn </a>
+				<a class="uk-btn uk-btn-default" href="https://github.com/franken-ui" target="_blank">
+					Follow
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- END -->
+</div>
